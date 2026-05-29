@@ -134,7 +134,7 @@ nav ul li a:hover{
 
 #button1_section1{
     background-color: rgb(255, 255, 255);
-    margin-top: 15px;
+    margin-top: 25px;
     height: 4vh;
     width: 7rem;
     border: none;
@@ -148,7 +148,7 @@ nav ul li a:hover{
 
 #button2_section1{
     background-color: transparent;
-    margin-top: 15px;
+    margin-top: 20px;
     height: 4vh;
     width: 7rem;
     margin-left: 15px;
@@ -363,5 +363,45 @@ nav ul li a:hover{
     font-style: normal;
     font-variation-settings:
     "wdth" 100;
-    margin-top: 5px;
+    margin-top: 10px;
+}
+
+#section6{
+    background-color: rgba(0, 89, 255, 0.932);
+    height: 30vh;
+    padding: 70px 30%;
+}
+
+.h1_sec6{
+    color: white;
+}
+
+.section6{
+    text-align: center;
+    justify-content: center;
+    width: 800px;
+}
+
+.p1_section6{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    color: white;
+    margin-top: 10px;
+}
+
+footer{
+    height: 30vh;
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+.container{
+    width: 15rem;
+    margin-left: ;
 }
