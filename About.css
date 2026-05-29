@@ -121,8 +121,7 @@ button a{
     display: flex;
     height: 30vh;
     gap: 200px;
-    margin-left: 240px;
-    background-color: blue;
+    
 }
 
 .mission{
@@ -131,6 +130,7 @@ button a{
     border: 0.5px solid gray;
     border-radius: 20px;
     padding: 20px;
+    
 }
 
 .h2-mission{
