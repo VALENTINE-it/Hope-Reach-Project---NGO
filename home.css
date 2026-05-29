@@ -8,138 +8,132 @@ button{
     cursor: pointer;
 }
 
-h1{
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 40px;
-    font-weight: 700;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
-}
-
 body{
     background-color: white;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
 }
 
 header{
-    display: flex;
     background-color: white;
-    height: 7vh;
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: min(1200px, 100%);
+    margin: 0 auto;
+    padding: 0.75rem 1rem;
 }
 
 h3{
-    margin-left: 8px;
-    margin-top: 20px;
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     font-weight: 650;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
-
 }
 
 nav{
-    margin-left: 500px;
-    margin-top: 25px;
-    
+    flex: 1 1 320px;
 }
 
 nav ul{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
 }
 
 nav ul li a{
     text-decoration: none;
     color: black;
-    margin: 10px;
-    padding: 7px;
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 16px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.95rem;
     font-weight: 600;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
 }
 
 nav ul li a:hover{
     background-color: rgb(245, 248, 255);
     border-radius: 7px;
-    color:  rgba(0, 89, 255, 0.932);
+    color: rgba(0, 89, 255, 0.932);
 }
 
 #header_button{
-    margin-left:30px;
-    margin-top: 15px;
-    height: 4vh;
-    width: 7rem;
     border: none;
     border-radius: 10px;
     background-color: black;
+    padding: 0.8rem 1.2rem;
 }
 
 #header_button a{
     color: white;
     text-decoration: none;
-}
-
-.header{
-    display: flex;
-    margin-left: 20%;
+    font-weight: 700;
 }
 
 .fa-solid{
-    font-size: 30px;
-    margin-left: 20px;
-    margin-top: 15px;
+    font-size: 1.8rem;
     color: rgba(0, 89, 255, 0.932);
 }
 
 #section1{
     background-image: url(section1.jpg);
-    height: 50vh;
+    min-height: 70vh;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: absolute;
+    background-attachment: scroll;
+    background-position: center;
     background-size: cover;
-    opacity: 0.8;
-    background-color:rgba(0, 89, 255, 0.932);
+    background-color: rgba(0, 89, 255, 0.932);
     background-blend-mode: overlay;
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 16px;
-    font-weight: 600;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
+    color: rgb(226, 218, 218);
+    padding: 4rem 1rem;
 }
 
 .section1{
-    padding-top: 200px;
-    padding-left: 300px;
-    color:  rgb(226, 218, 218);
+    max-width: 700px;
+    padding: 3rem 1rem;
 }
 
 #section1_h1{
-    font-size: 60px;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 1rem;
 }
 
 .section1_p{
-    font-size: 25px;
-    font-weight: 400;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    margin-bottom: 1rem;
+}
+
+#button1_section1,
+#button2_section1,
+.button_mission,
+.button_program{
+    border-radius: 10px;
+    font-weight: 700;
+    padding: 0.9rem 1.3rem;
+    min-width: 9rem;
 }
 
 #button1_section1{
-    background-color: rgb(255, 255, 255);
-    margin-top: 25px;
-    height: 4vh;
-    width: 7rem;
+    background-color: rgb(255,255,255);
+    margin-top: 1.5rem;
     border: none;
-    border-radius: 10px;
-    font-weight: 700;
 }
 
 #button1_section1:hover{
@@ -148,14 +142,10 @@ nav ul li a:hover{
 
 #button2_section1{
     background-color: transparent;
-    margin-top: 20px;
-    height: 4vh;
-    width: 7rem;
-    margin-left: 15px;
-    border-color: white;
-    border-radius: 10px;
+    margin-top: 1.5rem;
+    margin-left: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.9);
     color: rgb(226, 218, 218);
-    font-weight: 700;
 }
 
 #button2_section1:hover{
@@ -166,232 +156,186 @@ nav ul li a:hover{
 
 #section2{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
     background-color: rgba(233, 233, 233, 0.644);
-    padding-top: 20px;
-    height: 20vh;
+    padding: 4rem 1rem;
 }
 
-.served {
-     margin-left: 350px;
-}
-
-.volunteers {
-    margin-left: 250px;
-}
-
-.housed {
-     margin-left: 250px;
-}
-
-.programs {
-     margin-left: 250px;
+#section2 > div{
+    flex: 1 1 200px;
+    min-width: 180px;
+    max-width: 220px;
+    text-align: center;
+    padding: 1.25rem;
+    background: transparent;
+    border: none;
+    box-shadow: none;
 }
 
 .h1_section2{
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 40px;
-    font-weight: 700;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
 }
 
 .p_section2{
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 13px;
-    font-weight: 600;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
 }
 
 #section3{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    gap: 2rem;
+    padding: 3rem 1rem;
 }
 
 .img1{
-    margin-right: 300px;
-    margin-top: 5rem;
+    width: min(100%, 32rem);
     border-radius: 20px;
-    width: 30rem;
+    object-fit: cover;
+}
+
+.mission{
+    max-width: 600px;
+    text-align: center;
 }
 
 .p_mission{
-    margin-left: 300px;
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 16.5px;
+    font-size: 1rem;
     font-weight: 350;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
+    margin: 1.5rem auto 0;
 }
 
 .h1_mission{
-    margin-left: 350px;
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 40px;
-    font-weight: 700;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 1rem;
 }
 
 .button_mission{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
     background-color: black;
     color: white;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.p_programs{
-    margin-top: 10px;
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 17px;
-    font-weight: 350;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
-}
-
-.h1_program{
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
+    border: none;
+    text-decoration: none;
 }
 
 #section4{
-    height: 90vh;
+    padding: 4rem 1rem;
+    max-width: 100%;
+    margin: 0 auto;
     background-color: rgba(233, 233, 233, 0.644);
-    margin-top: 100px;
 }
 
 .program{
-    padding-top: 100px;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.h1_program{
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    margin-bottom: 0.5rem;
 }
 
 .img_program{
     display: flex;
-    margin-left: 200px;
-}
-
-.img2{
-    width: 25rem;
-    height: 25vh;
-    border-radius: 20px 20px 0 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .img_program1{
-    margin-top: 50px;
-    margin-left: 70px;
-    width: 25rem;
-    height: 40vh;
-    background-color: white;
-    border-radius: 20px;
-}
-
-.button_program{
-    background-color: white;
-    color: black;
-    border-color: grey;
-    border-width: 1px;
-    padding: 10px;
-    margin-top: 50px;
-    margin-left: 45%;
-    border-radius: 10px;
-}
-
-.button_program:hover{
-    background-color: rgba(233, 233, 233, 0.644);
-}
-
-.program1 {
-    margin-top: 20px;
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 15px;
+    flex: 1 1 260px;
+    min-width: 260px;
+    background: white;
+    border: none;
+    padding: 0;
     text-align: center;
-    font-weight: 350;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
+}
+
+.img2{
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 .h3_program{
-    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.program1{
+    margin-top: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.button_program{
+    margin: 2rem auto 0;
+    display: block;
+    background-color: white;
+    color: black;
+    border-color: grey;
+    border: none;
 }
 
 #section5{
-    display:flex;
-    margin: 70px 270px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 1rem;
+    background: #ffffff;
 }
 
-.img4{
-    width: 35rem;
+#section5 .img4{
+    width: min(100%, 32rem);
     border-radius: 20px;
+    object-fit: cover;
 }
 
 .section5{
-    width: 700px;
-    margin-left: 50px;
-    margin-top: 30px;
+    max-width: 560px;
 }
 
+.section5 h1{
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+}
+
+.p1_section5,
 .p_section5{
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 17px;
-    font-weight: 350;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
-    margin-top: 20px;
-}
-
-.p1_section5{
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 20px;
-    font-weight: 350;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
-    margin-top: 10px;
+    font-size: 1rem;
+    margin-top: 0.8rem;
 }
 
 #section6{
-    background-color: rgba(0, 89, 255, 0.932);
-    height: 30vh;
-    padding: 70px 30%;
-}
-
-.h1_sec6{
-    color: white;
+    background: rgba(0, 89, 255, 0.932);
+    padding: 3rem 1rem;
 }
 
 .section6{
+    max-width: 900px;
+    margin: 0 auto;
     text-align: center;
-    justify-content: center;
-    width: 800px;
+}
+
+.h1_sec6{
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 4vw, 3rem);
 }
 
 .p1_section6{
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 17px;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
-    color: white;
-    margin-top: 10px;
+    margin-bottom: 1.5rem;
 }
 
 footer{
@@ -403,5 +347,128 @@ footer{
 
 .container{
     width: 15rem;
-    margin-left: ;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+footer h3{
+    margin-bottom: 0.75rem;
+}
+
+footer p,
+footer ul,
+footer li{
+    font-size: 0.95rem;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer li{
+    margin-top: 0.5rem;
+}
+
+footer a{
+    color: white;
+}
+
+#section6 a{
+    display: inline-block;
+    margin: 0.4rem 0.5rem;
+}
+
+#section6 button{
+    min-width: 12rem;
+}
+
+/*responsiveness fixes.*/
+@media (max-width: 900px) {
+    .header{
+        justify-content: center;
+    }
+
+    nav{
+        flex: 1 1 100%;
+    }
+
+    nav ul{
+        justify-content: center;
+    }
+
+    #section2{
+        padding: 2rem 0.75rem;
+    }
+
+    #section4{
+        padding: 2rem 0.75rem;
+    }
+
+    #section5{
+        padding: 2rem 0.75rem;
+    }
+
+    footer{
+        height: auto;
+        flex-wrap: wrap;
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .header{
+        justify-content: center;
+        text-align: center;
+    }
+
+    #header_button{
+        width: 100%;
+        max-width: 280px;
+    }
+
+    nav ul{
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+    .section1,
+    .mission,
+    .section5,
+    .section6{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #section3,
+    #section5,
+    #section4{
+        padding: 2rem 0.75rem;
+    }
+
+    .img_program{
+        flex-direction: column;
+    }
+
+    .img_program1{
+        min-width: 100%;
+    }
+
+    #button2_section1{
+        margin-left: 0;
+        margin-top: 0.75rem;
+    }
+
+    footer{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container{
+        width: 100%;
+        max-width: 20rem;
+    }
 }
