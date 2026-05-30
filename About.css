@@ -119,19 +119,18 @@ button a{
 
 #section2{
     display: flex;
-    height: 30vh;
+    height: 50vh;
     gap: 50px;
     justify-content: center;
-    align-items: center;
 }
 
 .mission{
     width: 39rem;
-    margin-top: 50px;
+    height: 25vh;
+    margin-top: 100px;
     border: 0.5px solid gray;
     border-radius: 20px;
     padding: 20px;
-    align-items: center;
 }
 
 .h2-mission{
@@ -154,6 +153,7 @@ button a{
     font-variation-settings:
     "wdth" 100;
     line-height: 2;
+    color:  rgb(95, 94, 94);
 }
 
 .fa-bullseye{
@@ -163,3 +163,96 @@ button a{
 .fa-eye{
     margin-right: 10px;
 }
+
+#section3,
+#section5{
+    height: 65vh;
+    background-color:  rgba(243, 243, 243, 0.473);
+    justify-content: center;
+    align-items: center;
+}
+
+.values,
+.journey{
+    text-align: center;
+    width: 45rem;
+    margin-left: 40rem;
+    padding-top: 100px;
+}
+
+.p-values,
+.p-journey{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    line-height: 2;
+    color: rgb(95, 94, 94);
+}
+
+.h2-values,
+.h2-journey{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 35px;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+#parent{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.core{
+    width: 15rem;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 5rem;
+}
+
+.h3-value{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    margin-bottom: 15px;
+}
+
+.p-core{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    color: rgb(95, 94, 94);
+    line-height: 1.5rem;
+}
+
+/*.icons-core{
+    background-color: rgb(183, 183, 216);
+    width: 90px;
+    height: vh;
+    text-align: center;
+    padding: 20px;
+    border-radius: 100%;
+}
+    */
+
+    #section4{
+        height: 40vh;
+    }
+    
