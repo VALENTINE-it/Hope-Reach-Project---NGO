@@ -120,8 +120,9 @@ button a{
 #section2{
     display: flex;
     height: 30vh;
-    gap: 200px;
-    
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 .mission{
@@ -130,7 +131,7 @@ button a{
     border: 0.5px solid gray;
     border-radius: 20px;
     padding: 20px;
-    
+    align-items: center;
 }
 
 .h2-mission{
@@ -149,7 +150,6 @@ button a{
     font-optical-sizing: auto;
     font-size: 16px;
     font-weight: 500;
-    background-color: ;
     font-style: normal;
     font-variation-settings:
     "wdth" 100;
