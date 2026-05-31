@@ -6,29 +6,114 @@
     <title>HOPE REACH</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="contact.css">
-
 </head>
 <body>
-    <header>
+   <header>
         <div class="header">
             <i class="fa-solid fa-heart"></i> 
-            
-             <h3>HopeReach</h3>
-        <nav>
+            <h3>HopeReach</h3>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="program.html">Programs</a></li>
+                    <li><a href="involved.html">Get Involved</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="header_button"><a href="#">Donate Now</a></button>
+        </div>
+    </header>
+
+    <section id="section1">
+        <div class="section1">
+            <h1 id="section1_h1">Together, We Build Hope</h1>
+            <p class="section1_p">Empowering vulnerable communities through compassionate support</p>
+            <p class="section1_p">and sustainable solutions.</p>
+            <a href="involved.html"><button id="button1_section1">Get Involved</button></a>
+            <a href="program.html"><button id="button2_section1">Our Programs</button></a>
+        </div>
+    </section>
+
+    <section id="section2">
+        <div class="info-card">
+            <div class="card-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <h1 class="h1_section2">Kisumu, Kenya</h1>
+            <p class="p_section2">Feel free to visit our main offices,<br> we welcome you with open arms.</p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon"><i class="fa-solid fa-phone-volume"></i></div>
+            <h1 class="h1_section2">Call Us</h1>
+            <p class="p_section2">+254 704 769 219<br><span style="font-size:0.8rem;">Mon–Fri, 9am–6pm</span></p>
+        </div>
+        <div class="info-card">
+            <div class="card-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+            <h1 class="h1_section2">Email</h1>
+            <p class="p_section2">hopereach@hope.org<br>We reply within 24h</p>
+        </div>
+    </section>
+
+    <section id="section_feedback">
+        <div class="feedback_wrap">
+            <div class="feedback_form">
+                <h2 class="h1_feedback">Share your thoughts</h2>
+                <form action="#" method="post">
+                    <div class="form_row">
+                        <input type="text" name="firstname" placeholder="First name" required>
+                        <input type="text" name="surname" placeholder="Last name" required>
+                    </div>
+                    <div class="form_row">
+                        <input type="email" name="email" placeholder="Email address" required>
+                        <input type="tel" name="phone" placeholder="Phone number">
+                    </div>
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="feedback" placeholder="Your message, idea, or feedback..." rows="4" required></textarea>
+                    <button type="submit" class="button_feedback">Send message</button>
+                </form>
+            </div>
+            <div class="feedback_map">
+                <a href="https://www.google.com/maps/@-0.0983181,34.7630199,13z?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
+                    <img src="image.png" alt="Our location map preview" class="img_map">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h3><i class="fa-solid fa-heart"></i> HopeReach</h3>
+            <p>Empowering vulnerable communities through compassion, support, and sustainable solutions.</p>
+        </div>
+        <div class="container">
+            <h3>Quick Links</h3>
             <ul>
-                 <li><a href="home.html">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li><a href="About.html">About</a></li>
                 <li><a href="program.html">Programs</a></li>
                 <li><a href="involved.html">Get Involved</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-        <button><a href="#">Donate Now</a></button>
         </div>
-      
-    </header>
+        <div class="container">
+            <h3>Our Programs</h3>
+            <ul>
+                <li>Food Security</li>
+                <li>Housing Support</li>
+                <li>Education & Skills</li>
+                <li>Mental Health</li>
+            </ul>
+        </div>
+        <div class="container">
+            <h3>Contact Us</h3>
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i> Kisumu, Kenya</li>
+                <li><i class="fa-solid fa-phone"></i> +254704769219</li>
+                <li><i class="fa-solid fa-envelope"></i> contactus@hopereach.org</li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
