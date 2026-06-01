@@ -1,23 +1,303 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOPE REACH</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="program.css">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOPE REACH</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="program.css">
 
-</head>
-<body>
-    <header>
-        <div class="header">
-            <i class="fa-solid fa-heart"></i> 
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <i class="fa-solid fa-heart"></i> 
+                
+                <h3>HopeReach</h3>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="program.html">Programs</a></li>
+                    <li><a href="involved.html">Get Involved</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button><a href="#">Donate Now</a></button>
+            </div>
+        </header>
+        <section id="section1">
+            <div class="about-container">
+                <h1 class="h1_about">
+                Our Programs
+            </h1>
+            <p class="p_about">
+            Comprehensive services designed to address immediate needs and create long-term solutions for vulnerable individuals and families.
+            </p>
+            </div>
+        </section>
+        <section id="section2">
+            <div id="Parent">
+            <div class="container">
+                <h3 class="h3-section2">
+                    Food Security
+                </h3>
+                <p class="p-section">Ensuring no one in our community goes hungry</p>
+            </div>
+
+            <div class="container">
+                <h3 class="h3-section2">
+                    Housing Support
+                </h3>
+                <p class="p-section">Providing safe shelter and pathways to permanent housing</p>
+            </div>
+
+            <div class="container">
+                <h3 class="h3-section2">
+                    Education & Skills
+                </h3>
+                <p class="p-section">Empowering through education and job training</p>
+            </div>
+
+            </div>
+
+            <div id="Parent">
+            <div class="container">
+                <h3 class="h3-section2">
+                    Mental Health & Awareness
+                </h3>
+                <p class="p-section">Supporting mental health and overall well-being</p>
+            </div>
+
+            <div class="container">
+                <h3 class="h3-section2">
+                    Children & Family Services
+                </h3>
+                <p class="p-section">Supporting families and nurturing children</p>
+            </div>
+
+            <div class="container">
+                <h3 class="h3-section2">
+                    Employment Services
+                </h3>
+                <p class="p-section">Connecting people to meaningful employment opportunities</p>
+            </div>
+
+            </div>
+
+    <div class="nav">
+    <div class="tab active" onclick="showTab('food', this)">
+        <i class="fa-solid fa-utensils"></i> Food
+    </div>
+
+    <div class="tab" onclick="showTab('housing', this)">
+        <i class="fa-solid fa-house"></i> Housing
+    </div>
+
+    <div class="tab" onclick="showTab('education', this)">
+        <i class="fa-solid fa-graduation-cap"></i> Education
+    </div>
+
+    <div class="tab" onclick="showTab('mental', this)">
+        <i class="fa-solid fa-brain"></i></i> Mental
+    </div>
+
+    <div class="tab" onclick="showTab('children', this)">
+        <i class="fa-solid fa-child"></i> Children
+    </div>
+
+    <div class="tab" onclick="showTab('employment', this)">
+        <i class="fa-solid fa-briefcase"></i> Employment
+    </div>
+    </div>
+
+    <div id="food" class="content active">
+            <div class="sec1">
+        <h1 class="h1-nav1">Food Security</h1>
+        <p class="p1">
+            Ensuring no one in our community goes hungry
+        </p>
+        </div>
+
+    <p class="p-nav1">Our food security program provides comprehensive nutrition support to individuals and families facing food insecurity. We operate multiple food pantries, hot meal services, and nutrition education programs.</p>
+
+    <div class="sec2">
+        <h2 class="h2-nav1">Services Offered</h2>
+        <p class="p2">📌 Weekly food pantry distribution</p>
+        <p class="p2">📌 Hot meal programs at community centers 7 days a week</p>
+        <p class="p2">📌 Mobile food delivery for homebound individuals</p>
+        <p class="p2">📌 Nutrition education and cooking classes</p>
+        <p class="p2">📌 Fresh produce from community gardens</p>
+    </div>
+    <a href="involved.html"><button class="but-nav1">Support This Program</button></a>
+    </div>
+
+    <div id="housing" class="content">
+    <div class="sec1">
+        <h1 class="h1-nav1">Housing Support</h1>
+        <p class="p1">
+            Providing safe and stable housing for those in need
+        </p>
+        </div>
+
+    <p class="p-nav1">Our housing program offers emergency shelter, transitional housing, and support services to help individuals and families achieve housing stability and independence.</p>
+
+    <div class="sec2">
+        <h2 class="h2-nav1">Services Offered</h2>
+        <p class="p2">📌 Emergency shelter with 24/7 access</p>
+        <p class="p2">📌 Transitional housing programs</p>
+        <p class="p2">📌 Rental assistance and housing navigation</p>
+        <p class="p2">📌 Case management and support services</p>
+        <p class="p2">📌 Housing search and placement assistance</p>
+    </div>
+    <a href="involved.html"><button class="but-nav1">Support This Program</button></a>
+    </div>
+
+    <div id="education" class="content">
+    <div class="sec1">
+        <h1 class="h1-nav1">Education & Skills</h1>
+        <p class="p1">
+            Empowering through education and job training
+        </p>
+        </div>
+
+    <p class="p-nav1">We provide educational opportunities and job training programs that help individuals develop skills, gain employment, and achieve economic self-sufficiency.</p>
+
+    <div class="sec2">
+        <h2 class="h2-nav1">Services Offered</h2>
+        <p class="p2">📌 GED preparation and testing</p>
+        <p class="p2">📌 Computer literacy and digital skills</p>
+        <p class="p2">📌 Job training and certification programs</p>
+        <p class="p2">📌 Resume writing and interview preparation</p>
+        <p class="p2">📌 Job placement and career counseling</p>
+    </div>
+    <a href="involved.html"><button class="but-nav1">Support This Program</button></a>
+    </div>
+
+    <div id="mental" class="content">
+   <div class="sec1">
+        <h1 class="h1-nav1">Mental Health & Wellness</h1>
+        <p class="p1">
+            Supporting mental health and overall well-being
+        </p>
+        </div>
+
+    <p class="p-nav1">Our mental health program provides accessible counseling, support groups, and wellness services to help individuals overcome trauma, manage stress, and build resilience.</p>
+
+    <div class="sec2">
+        <h2 class="h2-nav1">Services Offered</h2>
+        <p class="p2">📌 Individual counseling sessions</p>
+        <p class="p2">📌 Support groups and peer counseling</p>
+        <p class="p2">📌 Crisis intervention services</p>
+        <p class="p2">📌 Substance abuse support programs</p>
+        <p class="p2">📌 Wellness activities and stress management</p>
+    </div>
+    <a href="involved.html"><button class="but-nav1">Support This Program</button></a>
+    </div>
+
+    <div id="children" class="content">
+    <div class="sec1">
+        <h1 class="h1-nav1">Children & Family Services</h1>
+        <p class="p1">
+            Supporting families and nurturing children
+        </p>
+        </div>
+
+    <p class="p-nav1">We provide comprehensive support for families with children, including childcare assistance, after-school programs, and family strengthening services.</p>
+
+    <div class="sec2">
+        <h2 class="h2-nav1">Services Offered</h2>
+        <p class="p2">📌 After-school tutoring and enrichment</p>
+        <p class="p2">📌 Summer camp and recreational programs</p>
+        <p class="p2">📌 Parenting classes and family counseling</p>
+        <p class="p2">📌 Childcare assistance and referrals</p>
+        <p class="p2">📌 School supplies and clothing distribution</p>
+    </div>
+    <a href="involved.html"><button class="but-nav1">Support This Program</button></a>
+    </div>
+
+    <div id="employment" class="content">
+    <div class="sec1">
+        <h1 class="h1-nav1">Employment & Job Training</h1>
+        <p class="p1">
+            Empowering through education and job training
+        </p>
+        </div>
+
+    <p class="p-nav1">Our employment services program helps job seekers develop skills, connect with employers, and achieve economic stability through sustainable employment.</p>
+
+    <div class="sec2">
+        <h2 class="h2-nav1">Services Offered</h2>
+        <p class="p2">📌 Job readiness training</p>
+        <p class="p2">📌 Career counseling and job placement</p>
+        <p class="p2">📌 Professional clothing and interview supplies</p>
+        <p class="p2">📌 Resume writing and interview preparation</p>
+        <p class="p2">📌 On-the-job training and apprenticeships</p>
+    </div>
+    <a href="involved.html"><button class="but-nav1">Support This Program</button></a>
+    </div>
+
+    <script>
+    function showTab(id, element) {
+
+    document.querySelectorAll('.content').forEach(c => {
+        c.classList.remove('active');
+    });
+
+    document.querySelectorAll('.tab').forEach(t => {
+        t.classList.remove('active');
+    });
+
+    document.getElementById(id).classList.add('active');
+
+    element.classList.add('active');
+    }
+    </script>
+        </section>
+
+        <section id="section3">
+
+            <div class="div-sec3">
+                <i class="fa-solid fa-user-group"></i>
+            <h1 class="h1-sec3">
+                A Holistic Approach to Support
+            </h1>
+            <p class="p-sec3">
+                We understand that challenges are often interconnected. That's why our programs are designed to work together, providing comprehensive support that addresses multiple needs simultaneously.
+            </p>
+
+            <p class="p-sec3">
+                Each individual receives personalized case management to ensure they have access to all the resources and support they need to achieve stability and independence.
+            </p>
+
+            <a href="contact.html"><button class="but-sec3">Learn More About Our Approach</button></a>
+            </div>
             
-            <h3>HopeReach</h3>
-        <nav>
+        </section>
+
+        <section id="section4">
+
+            <div class="div-sec4">
+                <h1 class="h1-sec4">Help Us Expand Our Impact</h1>
+
+            <p class="p-sec4">
+                Your support allows us to reach more individuals and families in need, expand our programs, and create lasting change in our community. Together, we can build a future where everyone has the opportunity to thrive.
+            </p>
+
+            <a href="involved.html"><button class="but-sec4">Get Involved Today</button></a>
+            </div>
+        </section>
+
+        <footer>
+        <div class="container">
+            <h3><i class="fa-solid fa-heart"></i> HopeReach</h3>
+            <p>Empowering vulnerable communities through compassion, support, and sustainable solutions.</p>
+        </div>
+        <div class="container">
+            <h3>Quick Links</h3>
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="About.html">About</a></li>
@@ -25,46 +305,24 @@
                 <li><a href="involved.html">Get Involved</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-        <button><a href="#">Donate Now</a></button>
         </div>
-    </header>
-    <section id="section1">
-        <div class="about-container">
-            <h1 class="h1_about">
-            Our Programs
-        </h1>
-        <p class="p_about">
-        Comprehensive services designed to address immediate needs and create long-term solutions for vulnerable individuals and families.
-        </p>
-        </div>
-    </section>
-    <section id="section2">
-        <div id="Parent">
         <div class="container">
-            <h3 class="h3-section2">
-                Food Security
-            </h3>
-            <p class="p-section">Ensuring no one in our community goes hungry</p>
+            <h3>Our Programs</h3>
+            <ul>
+                <li>Food Security</li>
+                <li>Housing Support</li>
+                <li>Education & Skills</li>
+                <li>Mental Health</li>
+            </ul>
         </div>
-
         <div class="container">
-            <h3 class="h3-section2">
-                Housing Support
-            </h3>
-            <p class="p-section">Providing safe shelter and pathways to permanent housing</p>
+            <h3>Contact Us</h3>
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i> Kisumu, Kenya</li>
+                <li><i class="fa-solid fa-phone"></i> +254 704 769 219</li>
+                <li><i class="fa-solid fa-envelope"></i> hello@hopereach.org</li>
+            </ul>
         </div>
-
-        <div class="container">
-            <h3 class="h3-section2">
-                Education & Skills
-            </h3>
-            <p class="p-section">Empowering through education and job training</p>
-        </div>
-
-        </div>
-    </section>
-
-
-</body>
-</html>
+    </footer>
+    </body>
+    </html>
