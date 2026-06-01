@@ -29,6 +29,9 @@ header {
     background-color: white;
     width: 100%;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.02);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .header {
@@ -100,71 +103,38 @@ nav ul li a:hover {
     color: rgba(0, 89, 255, 0.932);
 }
 
-#section1 {
-    background-image: url('section1.jpg');
-    min-height: 70vh;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center;
-    background-size: cover;
-    background-color: rgba(0, 89, 255, 0.85);
-    background-blend-mode: overlay;
-    color: rgb(226, 218, 218);
-    padding: 4rem 1rem;
+#section1{
+    background-color: rgb(0, 89, 255);
+    height: 30vh;
 }
 
-.section1 {
-    max-width: 700px;
-    padding: 3rem 1rem;
+.about-container{
+    text-align: center;
+    margin-left: 30%;
+    width: 47rem;
 }
 
-#section1_h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    margin-bottom: 1rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-}
-
-.section1_p {
-    font-size: clamp(1rem, 2vw, 1.25rem);
-    margin-bottom: 1rem;
-    opacity: 0.92;
-}
-
-#button1_section1,
-#button2_section1 {
-    border-radius: 40px;
+.h1_about{
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 45px;
     font-weight: 700;
-    padding: 0.85rem 2rem;
-    min-width: 9rem;
-    font-size: 0.95rem;
-    transition: all 0.2s;
-    border: none;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    padding: 50px 0 20px 0;
 }
 
-#button1_section1 {
-    background-color: rgb(255,255,255);
-    margin-top: 1.5rem;
-    color: #0a2b5e;
-}
-
-#button1_section1:hover {
-    background-color: rgb(233, 232, 232);
-    transform: translateY(-2px);
-}
-
-#button2_section1 {
-    background-color: transparent;
-    margin-top: 1.5rem;
-    margin-left: 0.75rem;
-    border: 1px solid rgba(255, 255, 255, 0.9);
-    color: rgb(226, 218, 218);
-}
-
-#button2_section1:hover {
-    background-color: white;
-    color: rgba(0, 89, 255, 0.932);
-    border: none;
+.p_about{
+    color: rgb(233, 232, 232);
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
 }
 
 #section2 {
@@ -185,7 +155,7 @@ nav ul li a:hover {
     text-align: center;
     transition: all 0.25s ease;
     box-shadow: 0 12px 28px -8px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.02);
-    border: 1px solid rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(245, 6, 6, 0.03);
 }
 
 .info-card:hover {
@@ -350,10 +320,16 @@ nav ul li a:hover {
 footer {
     background-color: black;
     color: #eef2ff;
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 2rem;
+    
+}
+
+#parent{
+    justify-content: space-between;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
     padding: 3rem 5%;
 }
 
@@ -397,6 +373,38 @@ footer a:hover {
 .container i {
     margin-right: 8px;
     color: rgba(0, 89, 255, 0.8);
+}
+
+#socials{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    gap: 3rem;
+    justify-content: center;
+}
+
+hr{
+    margin: 2rem 0;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.fa-brands {
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+    
+}
+
+.fa-facebook {
+    color: rgba(0, 89, 255, 0.932);
+}
+.fa-twitter{
+    color: rgb(58, 98, 233);
+}
+.fa-instagram {
+    color: rgba(231, 11, 11, 0.493);
+}
+.fa-linkedin {
+    color: rgba(0, 89, 255, 0.932);
 }
 
 @media (max-width: 1100px) {

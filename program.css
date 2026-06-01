@@ -12,6 +12,9 @@ header{
     display: flex;
     background-color: white;
     height: 7vh;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 h3{
@@ -393,12 +396,17 @@ button a{
 footer {
     background-color: black;
     color: #eef2ff;
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 2rem;
-    padding: 1rem 5%;
+    
+}
 
+#parent{
+    justify-content: space-between;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 3rem 5%;
 }
 
 .container {
@@ -441,6 +449,38 @@ footer a:hover {
 .container i {
     margin-right: 8px;
     color: rgba(0, 89, 255, 0.8);
+}
+
+#socials{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    gap: 3rem;
+    justify-content: center;
+}
+
+hr{
+    margin: 2rem 0;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.fa-brands {
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+    
+}
+
+.fa-facebook {
+    color: rgba(0, 89, 255, 0.932);
+}
+.fa-twitter{
+    color: rgb(58, 98, 233);
+}
+.fa-instagram {
+    color: rgba(231, 11, 11, 0.493);
+}
+.fa-linkedin {
+    color: rgba(0, 89, 255, 0.932);
 }
 
 @media (max-width: 768px) {
