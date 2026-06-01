@@ -163,11 +163,12 @@ button a{
 .tab {
     cursor: pointer;
     margin:0 80px 0 35px;
-    transition: 0.3s;
+    transition: 0.5s;
     
 }
 .tab.active {
     background-color: white;
+    padding: 0 1rem 1rem 1rem;
     border-radius: 30px;
 }
 
