@@ -135,11 +135,30 @@ nav ul li a:hover {
     background-position: center;   
     background-repeat: no-repeat;
     background-attachment: scroll;
+    background-filter: blur(8px);
+    position: relative;
+}
+
+#get-involved-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('getinvolved1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+    z-index: 0;
 }
 
 .info-container {
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 /* Action Buttons Deck Positioned Directly Above Cards Grid */
@@ -261,6 +280,18 @@ nav ul li a:hover {
     text-align: left;
 }
 
+.card-link {
+    color: rgb(0, 89, 255);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.2s ease;
+}
+
+.card-link:hover {
+    color: rgba(0, 70, 200, 0.95);
+    text-decoration: underline;
+}
+
 /* ==========================================================================
    Footer Component Structural Adjustments
    ========================================================================== */
@@ -269,9 +300,10 @@ footer {
     color: #eef2ff;
     flex-wrap: wrap;
     gap: 2rem;
+    
 }
 
-#parent {
+#parent{
     justify-content: space-between;
     display: flex;
     gap: 2rem;
@@ -289,7 +321,6 @@ footer h3 {
     font-weight: 700;
     font-size: 1.2rem;
     color: white;
-    margin-left: 0; /* Clear previous header rule alignment offsets */
 }
 
 footer p,
@@ -310,7 +341,6 @@ footer li {
 
 footer a {
     color: #d1d5ff;
-    text-decoration: none;
     transition: color 0.2s;
 }
 
@@ -323,40 +353,329 @@ footer a:hover {
     color: rgba(0, 89, 255, 0.8);
 }
 
-.container .fa-solid {
-    font-size: 14px;
-}
-
-#socials {
+#socials{
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
     margin-top: 1rem;
+    gap: 3rem;
     justify-content: center;
 }
 
-hr {
+hr{
     margin: 2rem 0;
     border: none;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-
 .fa-brands {
     padding-bottom: 1.5rem;
     font-size: 2rem;
+    
 }
 
 .fa-facebook {
     color: rgba(0, 89, 255, 0.932);
 }
-
-.fa-twitter {
+.fa-twitter{
     color: rgb(58, 98, 233);
 }
-
 .fa-instagram {
     color: rgba(231, 11, 11, 0.493);
 }
-
 .fa-linkedin {
     color: rgba(0, 89, 255, 0.932);
+}
+
+@media (max-width: 1100px) {
+    .feedback_wrap {
+        margin: 0 1.5rem;
+        gap: 2rem;
+    }
+    .feedback_form {
+        padding: 2rem 1.8rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .feedback_wrap {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .feedback_map {
+        min-height: 320px;
+    }
+    .form_row {
+        flex-direction: column;
+        gap: 0;
+    }
+    .h1_feedback {
+        font-size: 1.8rem;
+    }
+    footer {
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .feedback_form {
+        padding: 1.8rem;
+    }
+    .button_feedback {
+        width: 100%;
+    }
+    #section2 {
+        gap: 1.5rem;
+        padding: 3rem 1rem;
+    }
+    .info-card {
+        max-width: 100%;
+        flex-basis: 260px;
+    }
+}
+/* ==========================================================================
+   CURRENT OPENINGS / JOB CARDS SECTION
+   ========================================================================== */
+#open-roles {
+    padding: 80px 20px;
+    background-color: rgba(0, 89, 255, 0.08);
+}
+
+.roles-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title-block {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title-block h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.section-title-block p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.roles-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.job-card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.job-details {
+    flex: 1;
+}
+
+.job-details h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.job-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background-color: rgba(0, 89, 255, 0.1);
+    color: rgba(0, 89, 255, 0.932);
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.tag-location,
+.tag-type,
+.tag-type-part {
+    background-color: rgba(0, 89, 255, 0.1);
+    color: rgba(0, 89, 255, 0.932);
+}
+
+.tag-remote {
+    background-color: rgba(76, 175, 80, 0.1);
+    color: rgba(76, 175, 80, 0.9);
+}
+
+.tag-intern {
+    background-color: rgba(255, 152, 0, 0.1);
+    color: rgba(255, 152, 0, 0.9);
+}
+
+.job-description {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.job-action {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btn-apply {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: rgb(0, 89, 255);
+    color: white;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-apply:hover {
+    background-color: rgba(0, 70, 200, 0.95);
+    transform: translateY(-2px);
+}
+
+.no-openings {
+    text-align: center;
+    padding: 60px 40px;
+    background-color: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    grid-column: 1 / -1;
+}
+
+.no-openings i {
+    font-size: 48px;
+    color: rgba(0, 89, 255, 0.5);
+    margin-bottom: 20px;
+    display: block;
+}
+
+.no-openings h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.no-openings p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   COMMUNITY TESTIMONIALS SECTION
+   ========================================================================== */
+#community-voices {
+    padding: 80px 20px;
+    background-color: rgba(0, 89, 255, 0.08);
+}
+
+.testimonials-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.testimonial-card {
+    background-color: #f5f5f5;
+    border-left: 4px solid rgb(0, 89, 255);
+    border-radius: 8px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.7;
+    font-style: italic;
+    margin: 0;
+}
+
+.testimonial-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(0, 89, 255);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.user-info h4 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    margin: 0 0 5px 0;
+}
+
+.user-info span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    color: #777;
 }
