@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | HopeReach</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="donate.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <i class="fa-solid fa-heart"></i>
+            <h3>HopeReach</h3>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="program.html">Programs</a></li>
+                    <li><a href="involved.html">Get Involved</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="header_button"><a href="donate.html">Donate Now</a></button>
+        </div>
+    </header>
+
+    <section id="section1">
+        <div class="about-container">
+            <h1 class="h1_about">Donate to HopeReach</h1>
+            <p class="p_about">Support our work with a secure gift today. Choose a preset amount or enter a custom value and select the payment method that works best for you.</p>
+            <a href="#donation-form" class="hero-button">Start Giving</a>
+        </div>
+    </section>
+
+    <section id="donation-form">
+        <div class="donation-layout">
+            <div class="donation-panel">
+                <h2>Choose a payment option</h2>
+                <p class="panel-copy">All payments are processed securely. Select PayPal, M-Pesa, or bank transfer and move forward with confidence.</p>
+
+                <div class="payment-grid">
+                    <div class="payment-card paypal-card">
+                        <div class="payment-icon"><i class="fa-brands fa-paypal"></i></div>
+                        <h3>PayPal</h3>
+                        <p>Instant online payment using your PayPal account or debit card.</p>
+                        <a href="#" class="payment-button">Use PayPal</a>
+                    </div>
+                    <div class="payment-card mpesa-card">
+                        <div class="payment-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <h3>M-Pesa</h3>
+                        <p>Quick mobile payment through M-Pesa. Use the number provided at checkout.</p>
+                        <a href="#" class="payment-button">Use M-Pesa</a>
+                    </div>
+                    <div class="payment-card bank-card">
+                        <div class="payment-icon"><i class="fa-solid fa-university"></i></div>
+                        <h3>Bank Transfer</h3>
+                        <p>Transfer directly with the HopeReach bank account details.</p>
+                        <a href="#" class="payment-button">Use Bank Transfer</a>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="amount-panel">
+                <h2>Give an amount</h2>
+                <p class="panel-copy">Pick one of the preset gifts or enter the amount you would like to donate.</p>
+
+                <div class="preset-amounts">
+                    <button class="amount-button">500</button>
+                    <button class="amount-button">1,000</button>
+                    <button class="amount-button">2,500</button>
+                    <button class="amount-button">5,000</button>
+                </div>
+
+                <div class="custom-amount">
+                    <label for="custom-amount">Any amount</label>
+                    <input id="custom-amount" type="number" placeholder="Enter your amount" min="1">
+                </div>
+
+                <a href="#" class="donate-submit">Donate Now</a>
+                <p class="small-note">If you need help choosing an amount, email us at <a href="mailto:hello@hopereach.org">hello@hopereach.org</a>.</p>
+            </aside>
+        </div>
+    </section>
+
+</body>
+</html>
