@@ -25,77 +25,82 @@ a {
     text-decoration: none;
 }
 
-header {
+header{
+    display: flex;
     background-color: white;
-    width: 100%;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.02);
+    height: 7vh;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
-    width: min(1200px, 100%);
-    margin: 0 auto;
-    padding: 0.75rem 1rem;
-}
-
-h3 {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+h3{
+    margin-left: 8px;
+    margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 650;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+
 }
 
-nav {
-    flex: 1 1 320px;
+nav{
+    margin-left: 500px;
+    margin-top: 25px;
+    
 }
 
-nav ul {
+nav ul{
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.75rem;
 }
 
-nav ul li a {
+nav ul li a{
     text-decoration: none;
     color: black;
-    padding: 0.5rem 0.75rem;
-    font-size: 0.95rem;
+    margin: 10px;
+    padding: 7px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
     font-weight: 600;
-    transition: all 0.2s ease;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
 }
 
-nav ul li a:hover {
+nav ul li a:hover{
     background-color: rgb(245, 248, 255);
     border-radius: 7px;
-    color: rgba(0, 89, 255, 0.932);
+    color:  rgba(0, 89, 255, 0.932);
 }
 
-#header_button {
+button{
+    margin-left:30px;
+    margin-top: 15px;
+    height: 4vh;
+    width: 7rem;
     border: none;
-    border-radius: 40px;
+    border-radius: 10px;
     background-color: black;
-    padding: 0.7rem 1.5rem;
-    transition: transform 0.1s ease, background 0.2s;
 }
 
-#header_button:hover {
-    background-color: #111;
-    transform: scale(0.97);
-}
-
-#header_button a {
+button a{
     color: white;
     text-decoration: none;
-    font-weight: 700;
+}
+
+.header{
+    display: flex;
+    margin-left: 20%;
+}
+
+.fa-solid{
+    font-size: 30px;
+    margin-top: 15px;
+    color: rgba(0, 89, 255, 0.932);
 }
 
 .fa-solid {
