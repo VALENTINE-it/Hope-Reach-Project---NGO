@@ -15,7 +15,7 @@
         <div class="header">
             <i class="fa-solid fa-heart"></i>
             <h3>HopeReach</h3>
-            <nav>
+            <nav id="nav-menu">
                 <ul>
                     <li><a href="home.html">Home</a></li>
                     <li><a href="About.html">About</a></li>
@@ -25,8 +25,35 @@
                 </ul>
             </nav>
             <button id="header_button"><a href="donate.html">Donate Now</a></button>
+            <div class="hamburger" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger-menu');
+            const nav = document.getElementById('nav-menu');
+            
+            if (hamburger && nav) {
+                hamburger.addEventListener('click', function() {
+                    hamburger.classList.toggle('active');
+                    nav.classList.toggle('active');
+                });
+
+                // Close menu when a link is clicked
+                nav.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', function() {
+                        hamburger.classList.remove('active');
+                        nav.classList.remove('active');
+                    });
+                });
+            }
+        });
+    </script>
 
     <section id="section1">
         <div class="about-container">

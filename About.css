@@ -15,43 +15,44 @@ header{
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    align-items: center;
+    padding: 0 1rem;
 }
 
 h3{
     margin-left: 8px;
-    margin-top: 20px;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 650;
     font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
-
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 nav{
-    margin-left: 500px;
-    margin-top: 25px;
-    
+    margin-left: auto;
+    display: flex;
+    align-items: center;
 }
 
 nav ul{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 nav ul li a{
     text-decoration: none;
     color: black;
-    margin: 10px;
-    padding: 7px;
+    padding: 8px 12px;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: 16px;
+    font-size: clamp(14px, 2vw, 16px);
     font-weight: 600;
     font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
+    transition: all 0.2s ease;
+    white-space: nowrap;
 }
 
 nav ul li a:hover{
@@ -61,23 +62,58 @@ nav ul li a:hover{
 }
 
 button{
-    margin-left:30px;
-    margin-top: 15px;
-    height: 4vh;
-    width: 7rem;
+    margin-left:15px;
+    height: 40px;
+    padding: 0 1.2rem;
     border: none;
     border-radius: 10px;
     background-color: black;
+    cursor: pointer;
+    font-weight: 600;
+    white-space: nowrap;
 }
 
 button a{
     color: white;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header{
     display: flex;
-    margin-left: 20%;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+    gap: 6px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
 }
 
 .fa-solid{
@@ -88,74 +124,71 @@ button a{
 
 #section1{
     background-color: rgb(0, 89, 255);
-    height: 30vh;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem 1rem;
 }
 
 .about-container{
     text-align: center;
-    margin-left: 30%;
-    width: 47rem;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .h1_about{
     color: white;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: 45px;
+    font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 700;
     font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
-    padding: 50px 0 20px 0;
+    margin-bottom: 1rem;
 }
 
 .p_about{
     color: rgb(233, 232, 232);
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: 18px;
+    font-size: clamp(1rem, 2vw, 1.25rem);
     font-weight: 400;
     font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
+    line-height: 1.6;
 }
 
 #section2{
     display: flex;
-    height: 50vh;
-    gap: 50px;
+    flex-wrap: wrap;
+    gap: 2rem;
     justify-content: center;
+    padding: 3rem 1rem;
 }
 
 .mission{
-    width: 39rem;
-    height: 25vh;
-    margin-top: 100px;
+    width: 100%;
+    max-width: 500px;
     border: 0.5px solid gray;
     border-radius: 20px;
-    padding: 20px;
+    padding: 2rem;
 }
 
 .h2-mission{
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: 23px;
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
     font-weight: 650;
     font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 .p-section2{
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: 16px;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
     font-weight: 500;
     font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
-    line-height: 2;
+    line-height: 1.8;
     color:  rgb(95, 94, 94);
 }
 
@@ -169,8 +202,11 @@ button a{
 
 #section3,
 #section5{
-    height: 55vh;
+    min-height: auto;
     background-color:  rgba(243, 243, 243, 0.473);
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -178,9 +214,9 @@ button a{
 .journey,
 .team{
     text-align: center;
-    width: 45rem;
-    margin-left: 40rem;
-    padding-top: 50px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .p-values,
@@ -188,12 +224,10 @@ button a{
 .p-teams{
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: 17px;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
     font-weight: 400;
     font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
-    line-height: 2;
+    line-height: 1.8;
     color: rgb(95, 94, 94);
 }
 
@@ -202,11 +236,10 @@ button a{
 .team{
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: 35px;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
     font-weight: 700;
     font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
+    margin-bottom: 1rem;
 }
 
 #parent1,
@@ -214,60 +247,49 @@ button a{
     display: flex;
     justify-content: center;
     gap: 1.5rem;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 2rem;
 }
 
 .core,
 .leadership{
-    width: 15rem;
+    width: 100%;
+    max-width: 250px;
     background-color: white;
-    padding: 10px;
+    padding: 1.5rem;
     text-align: center;
     border-radius: 20px;
-    margin-top: 5rem;
 }
 
 .h3-value,
 .h3-leaders{
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: 15px;
+    font-size: clamp(1rem, 2vw, 1.1rem);
     font-weight: 600;
     font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
 .p-core{
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: 15px;
+    font-size: 0.95rem;
     font-weight: 400;
     font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
     color: rgb(95, 94, 94);
     line-height: 1.5rem;
 }
 
-/*.icons-core{
-    background-color: rgb(183, 183, 216);
-    width: 90px;
-    height: 90px;
-    text-align: center;
-    padding: 20px;
-    border-radius: 100%;
+#section4{
+    min-height: auto;
+    padding: 2rem 1rem;
 }
-    */
-
-    #section4{
-        height: 40vh;
-    }
     
 #section6{
     background: rgba(0, 89, 255, 0.932);
     padding: 3rem 1rem;
-    height: 40vh;
 }
 
 .section6{
@@ -279,42 +301,34 @@ button a{
 
 #parent3{
     display: flex;
-    gap: 10rem;
+    gap: 2rem;
     justify-content: center;
-    
+    flex-wrap: wrap;
 }
 
 .h1_sec6{
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: 35px;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
     font-weight: 750;
     font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
-    margin-top: 40px;
+    margin-top: 1.5rem;
 }
 
 .h1_section2{
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: 45px;
+    font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 750;
     font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
-    margin-top: 40px;
 }
 
 .p_section2{
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: 15px;
+    font-size: 0.95rem;
     font-weight: 450;
     font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
-    width: 10rem;
 }
 
 footer {
@@ -405,4 +419,133 @@ hr{
 }
 .fa-linkedin {
     color: rgba(0, 89, 255, 0.932);
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 7vh;
+        left: 0;
+        right: 0;
+        background-color: white;
+        flex-direction: column;
+        padding: 1rem 0;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        z-index: 999;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 1rem 1.5rem;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    #section2 {
+        padding: 2rem 1rem;
+        gap: 1rem;
+    }
+
+    .mission {
+        max-width: 100%;
+    }
+
+    #parent1, #parent2 {
+        gap: 1rem;
+    }
+
+    .core, .leadership {
+        max-width: 100%;
+        min-width: 200px;
+    }
+
+    button {
+        margin-left: 0;
+        width: 100%;
+        max-width: 150px;
+    }
+
+    footer {
+        padding: 2rem 1rem;
+    }
+
+    #parent {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 0 0.75rem;
+    }
+
+    h3 {
+        margin-left: 4px;
+    }
+
+    nav {
+        top: 60px;
+    }
+
+    button {
+        max-width: 130px;
+        height: 36px;
+        padding: 0 0.8rem;
+        font-size: 14px;
+    }
+
+    #section1 {
+        padding: 1.5rem 1rem;
+    }
+
+    .h1_about {
+        font-size: clamp(1.5rem, 3vw, 2.5rem);
+    }
+
+    .p_about {
+        font-size: clamp(0.9rem, 1.5vw, 1rem);
+    }
+
+    #section2 {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .mission {
+        padding: 1.5rem;
+    }
+
+    #parent1, #parent2 {
+        flex-direction: column;
+    }
+
+    .core, .leadership {
+        max-width: 100%;
+    }
+
+    #socials {
+        gap: 1.5rem;
+    }
+
+    .fa-brands {
+        font-size: 1.5rem;
+    }
 }

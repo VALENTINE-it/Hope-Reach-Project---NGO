@@ -32,43 +32,44 @@ header{
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    align-items: center;
+    padding: 0 1rem;
 }
 
 h3{
     margin-left: 8px;
-    margin-top: 20px;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 650;
     font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
-
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 nav{
-    margin-left: 500px;
-    margin-top: 25px;
-    
+    margin-left: auto;
+    display: flex;
+    align-items: center;
 }
 
 nav ul{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 nav ul li a{
     text-decoration: none;
     color: black;
-    margin: 10px;
-    padding: 7px;
+    padding: 8px 12px;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: 16px;
+    font-size: clamp(14px, 2vw, 16px);
     font-weight: 600;
     font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
+    transition: all 0.2s ease;
+    white-space: nowrap;
 }
 
 nav ul li a:hover{
@@ -78,23 +79,58 @@ nav ul li a:hover{
 }
 
 button{
-    margin-left:30px;
-    margin-top: 15px;
-    height: 4vh;
-    width: 7rem;
+    margin-left:15px;
+    height: 40px;
+    padding: 0 1.2rem;
     border: none;
     border-radius: 10px;
     background-color: black;
+    cursor: pointer;
+    font-weight: 600;
+    white-space: nowrap;
 }
 
 button a{
     color: white;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header{
     display: flex;
-    margin-left: 20%;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+    gap: 6px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
 }
 
 .fa-solid{
@@ -449,54 +485,152 @@ hr{
     min-width: 12rem;
 }
 
-@media (max-width: 900px) {
-    .header{
-        justify-content: center;
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
     }
 
-    nav{
-        flex: 1 1 100%;
+    nav {
+        display: none;
+        position: absolute;
+        top: 7vh;
+        left: 0;
+        right: 0;
+        background-color: white;
+        flex-direction: column;
+        padding: 1rem 0;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        z-index: 999;
     }
 
-    nav ul{
-        justify-content: center;
+    nav.active {
+        display: flex;
     }
 
-    #section2{
-        padding: 2rem 0.75rem;
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
     }
 
-    #section4{
-        padding: 2rem 0.75rem;
+    nav ul li {
+        width: 100%;
     }
 
-    #section5{
-        padding: 2rem 0.75rem;
+    nav ul li a {
+        display: block;
+        padding: 1rem 1.5rem;
+        border-radius: 0;
+        margin: 0;
     }
 
-    footer{
-        height: auto;
-        flex-wrap: wrap;
+    #section1 {
         padding: 2rem 1rem;
-        gap: 2rem;
+    }
+
+    #section2 {
+        padding: 2rem 1rem;
+        gap: 1rem;
+    }
+
+    #section2 > div {
+        flex: 1 1 150px;
+        min-width: 140px;
+    }
+
+    #section3 {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    #section4 {
+        padding: 2rem 1rem;
+    }
+
+    #section5 {
+        padding: 2rem 1rem;
+    }
+
+    button {
+        margin-left: 0;
+        margin-top: 0;
+        width: 100%;
+        max-width: 150px;
+    }
+
+    #section6 {
+        padding: 2rem 1rem;
+    }
+
+    #parent {
+        padding: 2rem 1rem;
+        gap: 1.5rem;
+    }
+
+    footer {
+        padding: 2rem 1rem;
     }
 }
 
-@media (max-width: 640px) {
-    .header{
-        justify-content: center;
-        text-align: center;
+@media (max-width: 480px) {
+    .header {
+        padding: 0 0.75rem;
     }
 
-    #header_button{
-        width: 100%;
-        max-width: 280px;
+    h3 {
+        margin-left: 4px;
     }
 
-    nav ul{
-        flex-direction: column;
-        gap: 0.6rem;
+    nav {
+        top: 60px;
     }
+
+    button {
+        max-width: 130px;
+        height: 36px;
+        padding: 0 0.8rem;
+        font-size: 14px;
+    }
+
+    .section1 {
+        padding: 2rem 1rem;
+    }
+
+    #section1_h1 {
+        font-size: clamp(1.75rem, 4vw, 2.5rem);
+    }
+
+    .section1_p {
+        font-size: clamp(0.9rem, 1.5vw, 1rem);
+    }
+
+    #section2 > div {
+        flex: 1 1 120px;
+        min-width: 100px;
+        padding: 0.75rem;
+    }
+
+    .h1_section2 {
+        font-size: clamp(1.25rem, 3vw, 2rem);
+    }
+
+    .p_section2 {
+        font-size: 0.85rem;
+    }
+
+    .img_program1 {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
+
+    #socials {
+        gap: 1.5rem;
+    }
+
+    .fa-brands {
+        font-size: 1.5rem;
+    }
+}
 
     .section1,
     .mission,
