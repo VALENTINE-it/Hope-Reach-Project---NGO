@@ -37,6 +37,11 @@ header{
     padding: 0 1rem;
 }
 
+.logo{
+    display: flex;
+    margin-left: 10rem;
+}
+
 h3{
     margin-left: 8px;
     font-family: "Open Sans", sans-serif;
@@ -47,7 +52,7 @@ h3{
 }
 
 nav{
-    margin-left: auto;
+    margin-left: 300px;
     display: flex;
     align-items: center;
 }
@@ -134,8 +139,8 @@ button a{
 }
 
 .fa-solid{
-    font-size: 30px;
-    margin-top: 15px;
+    font-size: 1.8rem;
+    margin-top: 0.3rem;
     color: rgba(0, 89, 255, 0.932);
 }
 

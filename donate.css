@@ -23,10 +23,15 @@ header {
     padding: 0 1rem;
 }
 
+.logo{
+    display: flex;
+    margin-left: 10rem;
+}
+
 .header {
     width: 100%;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 0 300px;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -36,10 +41,6 @@ header {
     color: rgba(0, 89, 255, 0.932);
 }
 
-.fa-solid {
-    font-size: 28px;
-}
-
 h3 {
     margin-left: 0;
     font-weight: 650;
@@ -47,7 +48,7 @@ h3 {
 }
 
 nav {
-    margin-left: auto;
+    margin-left: 200px;
     display: flex;
     align-items: center;
 }
@@ -136,6 +137,12 @@ nav ul li a:hover {
 .about-container {
     max-width: 900px;
     margin: 0 auto;
+}
+
+.fa-solid{
+    font-size: 1.8rem;
+    margin-top: 0.3rem;
+    color: rgba(0, 89, 255, 0.932);
 }
 
 .h1_about {
